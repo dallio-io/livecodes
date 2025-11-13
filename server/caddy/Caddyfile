@@ -2,6 +2,11 @@
 	auto_https off
 }
 
+(common) {
+  header -Server
+  encode
+}
+
 :80 {
 	import common
 	reverse_proxy /v9/* app:8090

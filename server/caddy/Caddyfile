@@ -9,6 +9,8 @@
 		level WARN
 	}
 	{$DEFAULT_SNI}
+
+  auto_https off
 }
 
 (common) {
